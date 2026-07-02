@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>자발적 퇴사도 실업급여 받는 법 | 15가지 인정 사유 총정리</title>
+<meta name="description" content="자발적 퇴사자도 실업급여를 받을 수 있는 15가지 방법과 조건, 지급액, 지급기간을 한눈에 정리했습니다.">
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" as="style" crossorigin
+  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+
+<style>
+  :root{
+    --bg:#ffffff;
+    --bg-soft:#f5f7fb;
+    --bg-soft-2:#eef1f8;
+    --text:#15171c;
+    --text-muted:#5b6472;
+    --text-faint:#8a92a0;
+    --border:#e7eaf1;
+    --primary:#2f5fff;
+    --primary-dark:#1a3fd1;
+    --primary-soft:#eaf0ff;
+    --purple:#7b5cfa;
+    --teal:#0fb8a6;
+    --amber:#ff9d33;
+    --danger:#ff5a5f;
+    --radius-lg:24px;
+    --radius-md:16px;
+    --radius-sm:10px;
+    --shadow-sm:0 2px 10px rgba(20,25,40,0.05);
+    --shadow-md:0 12px 32px rgba(30,45,90,0.09);
+    --ig-gradient: linear-gradient(135deg,#4f5bd5 0%,#962fbf 22%,#d62976 45%,#fa7e1e 70%,#feda75 100%);
+    --max: 1080px;
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    line-height:1.6;
+    word-break:keep-all;
+    overflow-wrap:break-word;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;}
+  a{color:inherit;}
+  button{font-family:inherit;}
+
+  .wrap{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:0 20px;
+  }
+
+  /* ---------- IG bars (top & bottom) ---------- */
+  .ig-bar{
+    background:var(--ig-gradient);
+    padding:14px 20px;
+  }
+  .ig-bar-inner{
+    max-width:var(--max);
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    text-align:center;
+  }
+  .ig-bar-text{
+    color:#fff;
+    font-weight:700;
+    font-size:clamp(0.86rem, 0.8rem + 0.3vw, 0.98rem);
+    letter-spacing:-0.01em;
+  }
+  .ig-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:#ffffff;
+    color:#c8288f;
+    border-radius:999px;
+    padding:10px 18px;
+    font-weight:800;
+    font-size:0.9rem;
+    text-decoration:none;
+    min-height:44px;
+    box-shadow:0 4px 14px rgba(0,0,0,0.12);
+    transition:transform .15s ease;
+  }
+  .ig-btn:active{ transform:scale(0.97); }
+  .ig-btn svg{ width:18px; height:18px; flex:none; }
+
+  /* ---------- Header ---------- */
+  header.top{
+    padding:22px 0 6px;
+    border-bottom:1px solid var(--border);
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:800;
+    font-size:clamp(1rem, 0.95rem + 0.2vw, 1.15rem);
+  }
+  .brand .dot{
+    width:10px;height:10px;border-radius:50%;
+    background:linear-gradient(135deg,var(--primary),var(--purple));
+    flex:none;
+  }
+  .brand-sub{
+    color:var(--text-faint);
+    font-size:0.82rem;
+    font-weight:500;
+    margin-top:2px;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding:clamp(36px, 6vw, 68px) 0 8px;
+  }
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background:var(--primary-soft);
+    color:var(--primary-dark);
+    font-weight:700;
+    font-size:0.82rem;
+    padding:7px 14px;
+    border-radius:999px;
+    margin-bottom:18px;
+  }
+  h1{
+    font-size:clamp(1.7rem, 1.35rem + 2vw, 2.7rem);
+    font-weight:800;
+    letter-spacing:-0.02em;
+    line-height:1.32;
+    margin:0 0 16px;
+  }
+  h1 .accent{
+    background:linear-gradient(90deg,var(--primary),var(--purple));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+  .hero-desc{
+    color:var(--text-muted);
+    font-size:clamp(0.95rem, 0.9rem + 0.25vw, 1.08rem);
+    max-width:640px;
+    margin:0 0 32px;
+  }
+
+  /* summary cards */
+  .card-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:14px;
+    margin-bottom:8px;
+  }
+  @media(min-width:640px){
+    .card-grid{ grid-template-columns:repeat(2,1fr); }
+  }
+  @media(min-width:960px){
+    .card-grid.cols-4{ grid-template-columns:repeat(4,1fr); }
+    .card-grid.cols-3{ grid-template-columns:repeat(3,1fr); }
+  }
+
+  .info-card{
+    background:var(--bg-soft);
+    border:1px solid var(--border);
+    border-radius:var(--radius-md);
+    padding:22px 20px;
+    min-height:100%;
+  }
+  .info-card .ic-icon{
+    width:40px;height:40px;
+    border-radius:12px;
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:14px;
+    font-size:1.15rem;
+  }
+  .icon-blue{ background:#e5edff; color:var(--primary-dark); }
+  .icon-purple{ background:#efe8ff; color:var(--purple); }
+  .icon-teal{ background:#e2faf6; color:var(--teal); }
+  .icon-amber{ background:#fff3e2; color:var(--amber); }
+
+  .info-card h3{
+    font-size:1rem;
+    font-weight:800;
+    margin:0 0 8px;
+  }
+  .info-card p{
+    color:var(--text-muted);
+    font-size:0.9rem;
+    margin:0;
+  }
+  .info-card .big{
+    font-size:clamp(1.25rem,1.1rem+0.6vw,1.55rem);
+    font-weight:800;
+    color:var(--primary-dark);
+    margin:2px 0 6px;
+  }
+
+  /* signature stat card */
+  .stat-hero{
+    margin-top:26px;
+    border-radius:var(--radius-lg);
+    padding:clamp(26px,4vw,42px);
+    background:linear-gradient(135deg,#2f5fff 0%, #7b5cfa 60%, #a06bff 100%);
+    color:#fff;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:22px;
+    position:relative;
+    overflow:hidden;
+    box-shadow:var(--shadow-md);
+  }
+  .stat-hero::after{
+    content:"";
+    position:absolute;
+    right:-60px; top:-60px;
+    width:220px;height:220px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.10);
+  }
+  @media(min-width:760px){
+    .stat-hero{ grid-template-columns:1.1fr 1fr; align-items:center; }
+  }
+  .stat-hero-label{
+    font-size:0.85rem;
+    font-weight:700;
+    opacity:0.85;
+    margin-bottom:8px;
+  }
+  .stat-hero-number{
+    font-size:clamp(2.1rem, 1.6rem + 2.6vw, 3.4rem);
+    font-weight:800;
+    letter-spacing:-0.02em;
+    line-height:1.1;
+  }
+  .stat-hero-number span{ font-size:0.5em; font-weight:700; opacity:0.85; }
+  .stat-hero-sub{
+    margin-top:10px;
+    font-size:0.92rem;
+    opacity:0.9;
+  }
+  .stat-hero-formula{
+    background:rgba(255,255,255,0.14);
+    border:1px solid rgba(255,255,255,0.25);
+    border-radius:var(--radius-sm);
+    padding:16px 18px;
+    font-size:0.88rem;
+    position:relative;
+    z-index:1;
+  }
+  .stat-hero-formula div + div{ margin-top:8px; padding-top:8px; border-top:1px dashed rgba(255,255,255,0.28); }
+  .stat-hero-formula b{ display:block; font-size:0.98rem; margin-bottom:2px; }
+
+  /* ---------- Section shell ---------- */
+  section{ padding:clamp(46px,7vw,84px) 0; }
+  section.alt{ background:var(--bg-soft); }
+  .section-head{ margin-bottom:clamp(24px,4vw,36px); }
+  .section-tag{
+    font-size:0.8rem;
+    font-weight:800;
+    color:var(--primary);
+    letter-spacing:0.02em;
+    margin-bottom:10px;
+  }
+  h2{
+    font-size:clamp(1.4rem, 1.2rem + 1vw, 2rem);
+    font-weight:800;
+    letter-spacing:-0.02em;
+    margin:0 0 10px;
+  }
+  .section-desc{
+    color:var(--text-muted);
+    font-size:0.96rem;
+    max-width:640px;
+  }
+
+  /* ---------- Table ---------- */
+  .table-scroll{
+    overflow-x:auto;
+    border:1px solid var(--border);
+    border-radius:var(--radius-md);
+    -webkit-overflow-scrolling:touch;
+  }
+  table{
+    border-collapse:collapse;
+    width:100%;
+    min-width:560px;
+    font-size:0.88rem;
+  }
+  thead th{
+    background:var(--bg-soft-2);
+    color:var(--text);
+    font-weight:700;
+    text-align:center;
+    padding:12px 10px;
+    white-space:nowrap;
+    border-bottom:1px solid var(--border);
+  }
+  tbody td{
+    text-align:center;
+    padding:12px 10px;
+    border-bottom:1px solid var(--border);
+    color:var(--text-muted);
+  }
+  tbody tr:last-child td{ border-bottom:none; }
+  tbody td.hl{ color:var(--primary-dark); font-weight:800; background:var(--primary-soft); }
+  .table-note{
+    font-size:0.8rem;
+    color:var(--text-faint);
+    margin-top:10px;
+  }
+
+  /* ---------- Checklist ---------- */
+  .checklist{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+  @media(min-width:640px){ .checklist{ grid-template-columns:repeat(2,1fr); } }
+  @media(min-width:960px){ .checklist{ grid-template-columns:repeat(3,1fr); } }
+
+  .check-item{
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:var(--radius-md);
+    padding:16px 16px;
+    min-height:44px;
+    transition:border-color .15s ease, box-shadow .15s ease, transform .15s ease;
+  }
+  .check-item:hover{ border-color:#c9d6ff; box-shadow:var(--shadow-sm); transform:translateY(-1px); }
+  .check-badge{
+    flex:none;
+    width:26px;height:26px;
+    border-radius:50%;
+    background:linear-gradient(135deg,var(--primary),var(--purple));
+    color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-size:0.74rem;
+    font-weight:800;
+    margin-top:1px;
+  }
+  .check-item h4{
+    font-size:0.94rem;
+    font-weight:700;
+    margin:0 0 4px;
+  }
+  .check-item p{
+    font-size:0.82rem;
+    color:var(--text-muted);
+    margin:0;
+  }
+
+  /* ---------- FAQ Accordion ---------- */
+  .faq-list{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  details.faq{
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:var(--radius-md);
+    overflow:hidden;
+  }
+  details.faq[open]{
+    border-color:#c9d6ff;
+    box-shadow:var(--shadow-sm);
+  }
+  details.faq summary{
+    list-style:none;
+    cursor:pointer;
+    padding:18px 20px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    min-height:44px;
+    -webkit-tap-highlight-color:transparent;
+  }
+  details.faq summary::-webkit-details-marker{ display:none; }
+  .faq-num{
+    flex:none;
+    width:34px;height:34px;
+    border-radius:10px;
+    background:var(--primary-soft);
+    color:var(--primary-dark);
+    font-weight:800;
+    font-size:0.85rem;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .faq-title{
+    flex:1;
+    font-weight:700;
+    font-size:clamp(0.94rem, 0.9rem + 0.2vw, 1.02rem);
+  }
+  .faq-title small{
+    display:block;
+    font-weight:500;
+    color:var(--text-faint);
+    font-size:0.78rem;
+    margin-top:2px;
+  }
+  .faq-chevron{
+    flex:none;
+    width:22px;height:22px;
+    color:var(--text-faint);
+    transition:transform .2s ease;
+  }
+  details.faq[open] .faq-chevron{ transform:rotate(180deg); color:var(--primary); }
+
+  .faq-body{
+    padding:0 20px 22px 68px;
+    color:var(--text-muted);
+    font-size:0.9rem;
+  }
+  .faq-body p{ margin:0 0 10px; }
+  .faq-body ul{ margin:0 0 10px; padding-left:18px; }
+  .faq-body li{ margin-bottom:5px; }
+  .faq-body .tip{
+    margin-top:12px;
+    background:var(--bg-soft);
+    border:1px solid var(--border);
+    border-radius:var(--radius-sm);
+    padding:12px 14px;
+    font-size:0.85rem;
+  }
+  .faq-body .tip b{ color:var(--primary-dark); }
+  @media(max-width:520px){
+    .faq-body{ padding-left:20px; }
+  }
+
+  /* ---------- Notice / disclaimer ---------- */
+  .notice{
+    background:#fff7ea;
+    border:1px solid #ffe4b0;
+    border-radius:var(--radius-md);
+    padding:20px 22px;
+    font-size:0.88rem;
+    color:#8a5a00;
+    margin-top:28px;
+  }
+  .notice b{ display:block; margin-bottom:4px; font-size:0.94rem; }
+
+  /* ---------- Footer ---------- */
+  footer{
+    padding:40px 0 20px;
+    color:var(--text-faint);
+    font-size:0.82rem;
+    text-align:center;
+  }
+
+  /* focus visibility */
+  a:focus-visible, button:focus-visible, summary:focus-visible{
+    outline:2px solid var(--primary);
+    outline-offset:2px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ transition:none !important; animation:none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== TOP INSTAGRAM BAR ===== -->
+<div class="ig-bar">
+  <div class="ig-bar-inner">
+    <span class="ig-bar-text">더 많은 꿀정보 얻고 싶다면?</span>
+    <a class="ig-btn" href="https://www.instagram.com/startup_tip_" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+      startup_tip_ 팔로우하기
+    </a>
+  </div>
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span>실업급여 가이드</div>
+    <div class="brand-sub">자발적 퇴사자를 위한 실업급여 인정 사유 총정리</div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<div class="hero">
+  <div class="wrap">
+    <span class="eyebrow">2026년 최신 기준</span>
+    <h1>자발적으로 퇴사해도<br><span class="accent">실업급여</span> 받을 수 있는 15가지 방법</h1>
+    <p class="hero-desc">
+      실업급여는 단순한 위로금이 아니라 재취업을 지원하는 사회보험 제도입니다.
+      권고사직이나 계약만료가 아니어도, 아래 15가지 사유 중 하나에 해당하면
+      자발적 퇴사자도 실업급여를 받을 수 있어요.
+    </p>
+
+    <div class="card-grid cols-4">
+      <div class="info-card">
+        <div class="ic-icon icon-blue">📘</div>
+        <h3>실업급여란</h3>
+        <p>고용보험 가입 근로자가 비자발적으로 실직했을 때, 재취업 활동 기간 동안 생활 안정을 위해 지급되는 급여예요.</p>
+      </div>
+      <div class="info-card">
+        <div class="ic-icon icon-purple">✅</div>
+        <h3>필수조건</h3>
+        <p class="big">180일 이상</p>
+        <p>퇴사일 이전 18개월 동안 고용보험 가입일수(피보험단위기간)가 180일 이상이어야 해요.</p>
+      </div>
+      <div class="info-card">
+        <div class="ic-icon icon-teal">💰</div>
+        <h3>1일 지급액 (2026년)</h3>
+        <p class="big">66,048원 ~ 68,100원</p>
+        <p>퇴직 전 평균임금의 60%로 계산되며, 상한액과 하한액이 정해져 있어요.</p>
+      </div>
+      <div class="info-card">
+        <div class="ic-icon icon-amber">📅</div>
+        <h3>지급기간</h3>
+        <p class="big">120일 ~ 270일</p>
+        <p>연령과 고용보험 가입기간에 따라 지급되는 일수가 달라져요.</p>
+      </div>
+    </div>
+
+    <!-- signature stat card -->
+    <div class="stat-hero">
+      <div>
+        <div class="stat-hero-label">고용보험 가입 10년 이상 · 만 50세 미만인 경우</div>
+        <div class="stat-hero-number">최대 약 1,634<span>만원</span></div>
+        <div class="stat-hero-sub">상한액 기준으로 실업급여를 최대한 받을 수 있는 조건이에요.</div>
+      </div>
+      <div class="stat-hero-formula">
+        <div><b>계산식</b>1일 상한액 68,100원 × 최대 지급일수 240일</div>
+        <div><b>지급 대상</b>비자발적 퇴사자 (권고사직 · 계약만료 · 폐업) — 또는 아래 15가지 사유에 해당하는 자발적 퇴사자</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 지급기간 표 ===== -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">SALARY TABLE</div>
+      <h2>고용보험 가입기간별 지급기간</h2>
+      <p class="section-desc">연령과 가입기간에 따라 실업급여를 받을 수 있는 일수가 달라져요. 표는 옆으로 스크롤해서 확인할 수 있어요.</p>
+    </div>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>고용보험 가입기간</th>
+            <th>만 50세 미만</th>
+            <th>만 50세 이상 · 장애인</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1년 미만</td><td>120일</td><td>120일</td></tr>
+          <tr><td>1년 ~ 3년 미만</td><td>150일</td><td>180일</td></tr>
+          <tr><td>3년 ~ 5년 미만</td><td>180일</td><td>210일</td></tr>
+          <tr><td>5년 ~ 10년 미만</td><td>210일</td><td>240일</td></tr>
+          <tr><td>10년 이상</td><td>240일</td><td>270일</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">※ 2026년 기준 · 1일 상한액 68,100원 / 1일 하한액 66,048원 기준으로 산정된 금액이에요.</p>
+  </div>
+</section>
+
+<!-- ===== 체크리스트 ===== -->
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">CHECKLIST</div>
+      <h2>혹시 나도 해당될까? 15가지 체크리스트</h2>
+      <p class="section-desc">
+        지금 당장 해당되지 않아도 괜찮아요. 언제든 상황이 바뀔 수 있으니 꼭 기억해두었다가 활용해 보세요.
+        자세한 내용은 아래 FAQ에서 하나씩 확인할 수 있어요.
+      </p>
+    </div>
+
+    <div class="checklist">
+      <div class="check-item"><span class="check-badge">1</span><div><h4>임금체불</h4><p>1년 이내 급여 지연 지급일 합계 60일 이상</p></div></div>
+      <div class="check-item"><span class="check-badge">2</span><div><h4>최저임금 미달</h4><p>시급 환산 시 최저임금 미달 2개월 이상</p></div></div>
+      <div class="check-item"><span class="check-badge">3</span><div><h4>근로조건 불일치</h4><p>채용 당시 조건과 실제 근무조건이 다름</p></div></div>
+      <div class="check-item"><span class="check-badge">4</span><div><h4>직장 내 괴롭힘</h4><p>폭언·따돌림·부당한 업무배제 등</p></div></div>
+      <div class="check-item"><span class="check-badge">5</span><div><h4>성희롱 · 성폭력</h4><p>사업주·상급자·동료로부터 피해</p></div></div>
+      <div class="check-item"><span class="check-badge">6</span><div><h4>질병 및 부상</h4><p>본인 질병·부상으로 근무가 어려운 경우</p></div></div>
+      <div class="check-item"><span class="check-badge">7</span><div><h4>가족 간병</h4><p>부모·배우자·자녀를 직접 간병해야 하는 경우</p></div></div>
+      <div class="check-item"><span class="check-badge">8</span><div><h4>육아문제</h4><p>돌봄 공백 · 근무시간 조정 불가</p></div></div>
+      <div class="check-item"><span class="check-badge">9</span><div><h4>출퇴근 왕복 3시간↑ (개인)</h4><p>배우자 발령·이사 등 개인 사정</p></div></div>
+      <div class="check-item"><span class="check-badge">10</span><div><h4>사업장 이전 · 전근</h4><p>지방발령·원거리 전근 등 회사 사정</p></div></div>
+      <div class="check-item"><span class="check-badge">11</span><div><h4>주 52시간 위반</h4><p>이직 전 1년 이내 주 60시간↑ 근무 9주 이상</p></div></div>
+      <div class="check-item"><span class="check-badge">12</span><div><h4>사업장 휴업 · 경영악화</h4><p>장기 휴업 · 임금 20% 이상 감소</p></div></div>
+      <div class="check-item"><span class="check-badge">13</span><div><h4>회사 폐업 예정</h4><p>폐업 예고·영업중단·급여지급 불능</p></div></div>
+      <div class="check-item"><span class="check-badge">14</span><div><h4>임신 · 출산</h4><p>야간·교대 근무 불가, 모성보호 미조치</p></div></div>
+      <div class="check-item"><span class="check-badge">15</span><div><h4>차별 · 부당대우</h4><p>종교·성별·장애·노조활동 등 사유 차별</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ 아코디언 ===== -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">FAQ</div>
+      <h2>15가지 사유, 자세히 알아보기</h2>
+      <p class="section-desc">각 항목을 눌러보면 인정 조건과 준비 서류를 자세히 확인할 수 있어요.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <details class="faq">
+        <summary>
+          <span class="faq-num">1</span>
+          <span class="faq-title">임금체불<small>퇴사 전 1년 이내 60일 이상 지연 지급</small></span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p>퇴사일 기준 1년 이내에 급여 지급일을 경과하여 급여를 지급한 일수의 총합이 60일 이상이면 임금체불로 인정돼요. 예를 들어 급여 지급일이 매월 5일인데 실제로는 8~12일 사이에 지급되는 상황이 반복되면, 매달 발생하는 지연일수를 1년치 더했을 때 60일을 넘길 수 있어요.</p>
+          <ul>
+            <li>상여금, 연장근로수당, 퇴직금 등의 체불도 포함돼요.</li>
+            <li>사직서에 <b>"임금체불로 인한 퇴사(1년간 임금 지연지급일 60일 이상)"</b> 문구를 반드시 기재해야 해요.</li>
+          </ul>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>급여 월</th><th>지급일</th><th>지급경과일수</th></tr></thead>
+              <tbody>
+                <tr><td>2026.05</td><td>8일</td><td>3일</td></tr>
+                <tr><td>2026.04</td><td>9일</td><td>4일</td></tr>
+                <tr><td>2026.03</td><td>10일</td><td>5일</td></tr>
+                <tr><td>2026.02</td><td>12일</td><td>7일</td></tr>
+                <tr><td>2026.01</td><td>10일</td><td>5일</td></tr>
+                <tr><td>… (총 12개월 누적)</td><td>-</td><td class="hl">합계 60일 이상 시 인정</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tip"><b>준비 팁 ·</b> 근로계약서, 임금명세서, 통장 입출금 내역으로 지급일을 증빙하세요.</div>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>
+          <span class="faq-num">2</span>
+          <span class="faq-title">최저임금 미달<small>시급 환산 시 최저임금보다 낮은 경우</small></span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p>내 급여를 시급으로 환산했을 때 최저시급보다 낮고, 이런 상태가 1년 이내 2개월 이상 지속되었다면 인정 사유가 돼요.</p>
+          <div class="tip"><b>준비 팁 ·</b> 사직서에 최저시급 위반 사실을 기재하고, 근로계약서·임금명세서·통장 내역을 함께 준비하세요.</div>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>
+          <span class="faq-num">3</span>
+          <span class="faq-title">채용 당시 근로조건과 달라진 경우<small>급여·근무일·직무가 현저히 불리하게 변경</small></span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p>예를 들어 월급 300만원으로 계약했는데 실제로는 250만원을 받거나, 주 5일 근무로 계약했지만 실제로 주 6일 근무를 하거나, 사무직으로 채용됐는데 현장직으로 강제 배치된 경우처럼 근로조건이 현저하게 불리하게 변경되면 인정돼요.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>
+          <span class="faq-num">4</span>
+          <span class="faq-title">직장 내 괴롭힘<small>폭언 · 따돌림 · 부당한 업무배제</small></span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p>상사의 지속적인 폭언, 따돌림, 모욕적 언행, 부당한 업무배제 등으로 사내에 괴롭힘을 신고하고 인정되었지만 정상 근무가 어려운 경우 인정돼요.</p>
+          <div class="tip"><b>준비 팁 ·</b> 괴롭힘 사실로 퇴사가 불가피했음을 객관적으로 입증해야 해요. 녹음, 대화 내용 등 증거를 확보해두세요.</div>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>
+          <span class="faq-num">5</span>
+          <span class="faq-title">성희롱 · 성폭력<small>사업주 · 상급자 · 동료로부터 피해</small></span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p>사내 사업주, 상급자, 동료로부터 성희롱이나 성폭력을 당한 경우 실업급여 인정 사유가 돼요.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>
+          <span class="faq-num">6</span>
+          <span class="faq-title">질병 및 부상<small>본인 질병 · 부상으로 근무가 어려운 경우</small></span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p>허리디스크, 우울증, 공황장애, 암 치료, 아킬레스건 후유증 등 본인의 질병이나 부상으로 근무가 어려운 경우 인정돼요.</p>
+          <ul>
+            <li>의사 진단서 발급</li>
+            <li>회사에 휴직 또는 업무전환 요청</li>
+            <li>회사의 요청 거부 사실 증빙</li>
+          </ul>
+          <div class="tip"><b>준비 팁 ·</b> 위 세 단계를 순서대로 진행하고 각 단계를 서류로 남겨두는 게 중요해요.</div>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>
+          <span class="faq-num">7</span>
+          <span class="faq-title">가족 간병<small>부모 · 배우자 · 자녀 간병</small></span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p>가족의 질병이나 장애로 본인이 반드시 간병해야 하는 경우 인정돼요. 단, 본인 외에 간병할 사람이 없고 회사에 휴직 등을 요청했으나 허용되지 않은 상황이 중요하게 평가돼요.</p>
+          <ul>
+            <li>간병 필요성을 확인할 진단서 또는 소견서 (최소 30일 이상 간호 필요 수준)</li>
+            <li>본인 외 간병 가능 여부를 확인할 주민등록등본, 필요시 가족관계증명서</li>
+            <li>휴가·휴직을 요청했으나 불가했다는 사업주 확인서 또는 회사 사정 입증자료</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>
+          <span class="faq-num">8</span>
+          <span class="faq-title">육아문제<small>돌봄 공백 · 근무시간 조정 불가</small></span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p>어린이집 이용이 불가능하고, 배우자도 돌봄이 어려우며, 근무시간 조정도 불가능한 경우 인정돼요. 육아휴직 신청 조건을 충족해 신청했음에도 사업주가 거부한 경우도 포함돼요.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>
+          <span class="faq-num">9</span>
+          <span class="faq-title">출퇴근 왕복 3시간 이상 (개인사정)<small>배우자 발령 · 이사 등</small></span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p>배우자 발령, 이사 등으로 왕복 통근시간이 3시간 이상이 되면 인정돼요. 통상의 교통수단(대중교통 등) 기준으로 사업장까지의 왕복 통근시간이 3시간 이상인지가 기준이며, 평소 승용차로 출퇴근했다면 승용차 기준으로 판단해요.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>
+          <span class="faq-num">10</span>
+          <span class="faq-title">사업장의 이전 또는 전근 (회사사정)<small>지방발령 · 원거리 전근 · 사업장 이전</small></span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p>지방 발령, 원거리 전근, 사업장 이전으로 통근이 어려워진 경우 인정돼요. 사업장 이전으로 출퇴근 왕복 시간이 3시간 이상으로 늘어났는지가 핵심 판단 기준이에요.</p>
+          <ul>
+            <li>통근버스, 숙소, 교통비 지원 등 회사의 지원 여부도 함께 고려돼요.</li>
+            <li>일부 고용센터는 '사업장 이전으로 통근곤란 퇴사 확인서' 양식을 요청하기도 해요.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>
+          <span class="faq-num">11</span>
+          <span class="faq-title">주 52시간 위반<small>이직 전 1년 이내 주 60시간 이상 근무 9주 이상</small></span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p>현재 주 52시간 초과 근무는 법 위반이지만, 실업급여 인정 사유가 되려면 주 60시간 이상 근무가 기준이에요. 이직 전 1년 이내 52시간 초과 주가 9주(2개월) 이상이거나, 연속 9주 평균 1주 근로시간이 52시간을 초과하는지가 핵심 판단 요소예요.</p>
+          <div class="tip"><b>참고 ·</b> 근로기준법 제59조·제63조 등 근로시간 규정의 적용 제외 또는 특례 업종·직무는 대상에서 제외될 수 있어요.</div>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>
+          <span class="faq-num">12</span>
+          <span class="faq-title">사업장 휴업 및 경영악화<small>장기 휴업 · 임금 20% 이상 감소</small></span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-body">
+          <ul>
+            <li><b>장기 휴업</b> — 2개월 이상 휴업으로 휴업 전 평균임금의 70% 미만 지급이 2개월 이상 지속된 경우</li>
+            <li><b>임금 20% 이상 감소</b> — 종전 평균임금의 20% 이상 줄어든 경우</li>
+            <li><b>구조조정 예정</b> — 권고사직 및 해고에 해당하여 인정</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>
+          <span class="faq-num">13</span>
+          <span class="faq-title">회사의 폐업 예정<small>폐업 예고 · 영업중단 · 급여지급 불능</small></span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p>폐업 예고, 영업 중단, 급여 지급 불능 상태에 있는 경우 실업급여 인정 사유가 돼요.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>
+          <span class="faq-num">14</span>
+          <span class="faq-title">임신 · 출산 관련<small>야간 · 교대 근무 불가, 모성보호 미조치</small></span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p>임신으로 야간근무 및 주야교대 근무가 불가능한 경우(의사 소견서 및 근무여건 입증 필요), 또는 유산 위험이 있음에도 회사가 모성보호 조치를 하지 않은 경우 인정돼요.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>
+          <span class="faq-num">15</span>
+          <span class="faq-title">차별 · 부당대우<small>종교 · 성별 · 장애 · 노조활동 등</small></span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p>종교, 성별, 장애, 노조활동 등의 이유로 차별받는 경우 인정돼요.</p>
+          <ul>
+            <li>차별 대우의 구체적인 내용을 육하원칙에 따라 명확히 기록하세요.</li>
+            <li>이메일, 문자메시지, 녹취파일, 동료의 증언 등 객관적인 증거 확보가 중요해요.</li>
+            <li>차별 대우로 업무수행이 어려워졌다면 진단서 발급이 도움이 될 수 있어요.</li>
+          </ul>
+          <div class="tip"><b>준비 팁 ·</b> 감정적인 호소보다는 사실 관계와 증거 중심으로, 객관적이고 명확하게 작성하세요.</div>
+        </div>
+      </details>
+
+    </div>
+
+    <div class="notice">
+      <b>안내</b>
+      실제 실업급여 수급 가능 여부는 개인 상황과 증빙자료에 따라 다르게 판단될 수 있어요. 정확한 확인은 관할 고용센터 또는 고용노동부 고객센터(국번없이 1350)를 통해 진행해 주세요.
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOTTOM INSTAGRAM BAR ===== -->
+<div class="ig-bar">
+  <div class="ig-bar-inner">
+    <span class="ig-bar-text">더 많은 꿀정보 얻고 싶다면?</span>
+    <a class="ig-btn" href="https://www.instagram.com/startup_tip_" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+      startup_tip_ 팔로우하기
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>본 콘텐츠는 정보 제공을 목적으로 하며, 법적 효력이 있는 자료가 아니에요. 신청 전 반드시 고용센터에 확인하세요.</p>
+    <p>Made by @startup_tip_</p>
+  </div>
+</footer>
+
+</body>
+</html>
